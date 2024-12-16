@@ -221,11 +221,13 @@
           <p>u probably remember that time on the call i mentioned that i wanted to ask something on christmas but i refused to let u know bc i had to think abt it naa. now i want to tell u this bc its a beautiful day :). </p>
           <p>Steffany, i love u so much. and i dont want anybody else for me, i really want u my baby. im willing to wait for the time till we see each other in person rather than be with someone else. i imagine my future with u and im really sure about u. im never been this sure with someone before i could tell. i understand that u dont want to be in a relationship yet and u told me when the first time we met, and also bc u cant give and balance time with me. and i dont mind it as long as im w u and u are not gonna leave me. u can still make time for me after ur busy time tho i really appreciate it. u said to me that ure afraid of making me feel sad bc of ur absence and everything. </p>
           <p>those arent a problem for me but for me personally, the main problem is without an official label, i dont have rights to do anything since im not ur bf and possibly could lose u anytime. but i dont want to lose u at all argh. i just want to feel safe with label so that i will not think i will be replaced or u will find someone better, even tho yeah u said to me u wont find someone better cus i am enough for u. i hope u understand what i meant babyy</p>
-          <p>So in this special day and special date that people always remember, there is one thing i want to ask you...</p>
+          <p>so on this special day and special date, there is one thing i want to ask u...</p>
           <button id="reveal-button">Click to Reveal...</button>
           <div id="question" class="hidden">
-            <h2>Do you want to be my girlfriend baby? 🥺</h2>
-            <p>(screenshot this and show me with ur answer 😊)</p>
+            <h2>Do you want to be my girlfriend, my other half, my world, my everything baby? 🥺</h2>
+            <p>(screenshot this and inform me with ur response 😊)</p>
+            <p>(PS. the reason i pick this day bc its jesus's born day)</p>
+            <p>(PS. pwese say yes HAHAHHHDHHSAHSADHDHAWHAHHSD)</p>
           </div>
           <div id="response" class="hidden">
             <p id="response-text"></p>
@@ -243,26 +245,6 @@
         revealButton.addEventListener('click', () => {
             questionDiv.classList.remove('hidden');
             revealButton.style.display = 'none';
-        });
-
-        yesButton.addEventListener('click', () => {
-            responseText.textContent = "I'm so glad you said yes! ❤️ I can't wait to go on more adventures with you, like that trip to [place you want to visit] we talked about!";
-            responseDiv.classList.remove('hidden');
-            questionDiv.style.display = 'none';
-        });
-
-        noButton.addEventListener('click', () => {
-            responseText.textContent = "Oh, that's okay. I still cherish every moment we've shared.";
-            responseDiv.classList.remove('hidden');
-            questionDiv.style.display = 'none';
-
-            const buttonRect = noButton.getBoundingClientRect();
-            const maxX = window.innerWidth - buttonRect.width;
-            const maxY = window.innerHeight - buttonRect.height;
-
-            noButton.style.position = 'absolute';
-            noButton.style.left = Math.random() * maxX + 'px';
-            noButton.style.top = Math.random() * maxY + 'px';
         });
     </script>
 </body>
