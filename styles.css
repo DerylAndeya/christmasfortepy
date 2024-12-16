@@ -1,0 +1,82 @@
+body {
+    font-family: 'Great Vibes', cursive; 
+    background-image: url("background-image.jpg");
+    background-size: cover; 
+    text-align: center;
+    padding: 30px 20px; /* Adjusted padding for mobile */
+    background: linear-gradient(rgba(240, 248, 255, 0.7), rgba(240, 248, 255, 0.7)), url("background-image.jpg");
+}
+
+.container {
+    background: white;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Make container take up most of the screen width on mobile */
+    margin: 0 auto; 
+}
+
+h1 { 
+    color: #ff69b4;
+    font-size: 2em; /* Slightly smaller font size for mobile */
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1em; /* Adjust font size as needed */
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1em; 
+    transition: all 0.2s ease; /* Add transition for smooth animation */
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+button:active { 
+    transform: scale(0.95); /* Scale down on press */
+}
+
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 500px) { 
+    body {
+        padding: 50px; /* Increase padding on larger screens */
+    }
+
+    h1 {
+        font-size: 2.5em; 
+    }
+
+    p {
+        font-size: 1.2em; 
+    }
+
+    button {
+        font-size: 1.2em; 
+    }
+    
+    #no-button {
+        transition: left 0.3s ease, top 0.3s ease; /* Add transition for smooth movement */
+      }
+}
